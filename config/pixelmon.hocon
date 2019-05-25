@@ -1,4 +1,4 @@
-# Settings for controlling the auto-battler for AFK players.
+# Settings for controlling the auto-battler for AFK players. CHANGED
 AFKHandler {
     # The time in seconds before a player in a battle is declared to be AFK and the auto-battle code takes over for them.
     afkActivateSeconds=90
@@ -16,9 +16,9 @@ Breeding {
     # Allow the ranch expansion.
     allowRanchExpansion=true
     # Enable random Eggs from Ditto-Ditto breeding to contain Legendaries.
-    allowRandomBreedingEggsToBeLegendary=false
+    allowRandomBreedingEggsToBeLegendary=true
     # Number of world ticks needed to increase the breeding stage.
-    breedingTicks=18000
+    breedingTicks=8000
     # Maximum Pokemon a player can have in all ranches across the world. Max of 0 is unlimited.
     maxCumulativePokemonInRanch=0
     # Number of stages to go through before breeding occurs (1-5).
@@ -131,7 +131,7 @@ General {
     # If enabled, consumable held items will be returned to Pokémon at the end of player vs. player battles.
     returnHeldItems=true
     # Set Legendary shrines to one use (false) or multiple use (true).
-    reusableBirdShrines=false
+    reusableBirdShrines=true
     # Multipier for the speed that mounted Pokémon travel at. Can be between 0 and 1.
     ridingSpeedMultiplier=1
     # Allow Legendary bird shrines to spawn randomly in world.
@@ -297,7 +297,8 @@ Spawning {
         Whismur,
         Taillow,
         Remoraid,
-        Starly
+        Starly,
+		Rayquaza
     ]
     # Forces wild Pokémon to despawn after a battle.
     despawnOnFleeOrLoss=false
@@ -316,7 +317,7 @@ Spawning {
     # Whether or not Pixelmon should modify Minecraft loot tables.
     injectIntoLootTables=true
     # Chance that a Legendary spawn attempt will succeed (0-1).
-    legendarySpawnChance=0.30000001192092896
+    legendarySpawnChance=0.9
     # Average number of ticks before an attempt at Legendary spawning will be made (modified by spawn chance).
     legendarySpawnTicks=25000
     # Which types of loot, such as "simple_dungeon", that Pixelmon should not modify.
@@ -328,7 +329,7 @@ Spawning {
     # The maximum number of Pokémon that can be naturally spawned in at once. This does not count fishing, external moves, commands, or legendary spawning.
     maximumSpawnedPokemon=3000
     # Chance for a Meltan to spawn when mining a metal ore block. 1/x
-    meltanSpawnChance=8192
+    meltanSpawnChance=365
     # pixelmon.config.meltanTransformChance.comment
     meltanTransformChance=0.6
     # The minimum number of blocks between a spawned entity and an existing living entity.
@@ -338,13 +339,13 @@ Spawning {
     # Replaces Minecraft's villagers with Pixelmon NPCs.
     replaceMCVillagers=true
     # Shiny calculation uses 1/(Shiny rate) to get odds of becoming Shiny.
-    shinySpawnRate=4096
+    shinySpawnRate=2000
     # The number of spawn passes made per minute. Decrease for better performance.
     spawnFrequency=60
     # Sets spawning of Gyms in close proximity to newly generated towns on or off.
     spawnGyms=true
     # Sets whether or not Pokémon levels are determined by distance from the World's spawn point.
-    spawnLevelsByDistance=false
+    spawnLevelsByDistance=true
     # Whether or not wild Pokémon will have levels closer to the player's Pokémon.
     spawnLevelsCloserToPlayerLevels=true
     # Poke Marts will spawn with shopkeepers in Minecraft's towns.
@@ -368,7 +369,7 @@ Spawning {
     # The maximum number of spawns in a single spawn cycle for a single player. Lower for slower spawning and better performance.
     spawnsPerPass=2
     # Chance for a wild Pokemon to turn into a Ditto on capture.
-    transformToDittoOnCatch=5.0E-5
+    transformToDittoOnCatch=5.0E2
     # Modifies the rarity of bosses in the Ultra Space Dimension (bossRate * ultraSpaceBossModifier).
     ultraSpaceBossModifier=0.5
     # Modifies the rarity of hidden abilities in the Ultra Space Dimension (hiddenAbilitySpawnRate * ultraSpaceHiddenAbilityModifier).
