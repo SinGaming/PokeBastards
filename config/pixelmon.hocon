@@ -45,7 +45,7 @@ ExternalMoves {
 # General settings for the world.
 General {
     # Allow the anvil to replace finished items with starting item from player's inventory without manual placing.
-    allowAnvilAutoreloading=false
+    allowAnvilAutoreloading=true
     # Allow player to throw Poke Balls from hotbar. If false, Poke Balls can only be thrown in battles.
     allowCaptureOutsideBattle=true
     # Allow Pay Day to award PokéDollars when used.
@@ -232,11 +232,11 @@ PokeLoot {
     # Allows invisible PokeChests to spawn around the world randomly.
     spawnHidden=true
     # Default spawn mode (FCFS=0, PL1D=1, PUD=2, TIMED=3). FCFS = First Come First Serve, only one player can loot chest, then chests vanishes. PL1D = Player 1 Drop, chest gives one drop per person. Chest remains for others to use once each. PUD = Player Unlimited Drops, chests can be used infinitely by all players. TIMED = Each player allowed to loot again after specified time interval (individual timers). Chest remains after looting.
-    spawnMode=0
+    spawnMode=3
     # Allows normal visible PokeChests to spawn around the world randomly.
     spawnNormal=true
     # Chest spawn rate. 0: 1 per 64 chunks. 1: 1 per 32 chunks. 2: 1 per 18 chunks. 3: 1 per 10 chunks
-    spawnRate=1
+    spawnRate=3
     # Sets frequency (hours) that a player can reuse a timed loot chest (both placed in Creative and naturally spawned) if set to TIMED.
     timedLootReuseHours=24
 }
@@ -247,9 +247,9 @@ Pokerus {
     # Whether or not the player should be informed if their Pokémon got Pokérus.
     pkrsInformPlayers=true
     # Pokerus spawn rate (1/x). (0 to disable)
-    pkrsSpawnRate=12288
+    pkrsSpawnRate=2877
     # Chance to spread the Pokérus to the near Pokémon after a battle. (1/x) (-1 to disable; 0 to keep always active)
-    pkrsSpreadRate=5
+    pkrsSpreadRate=20
 }
 # Settings that control what Pokémon spawns and how many of them spawn.
 Spawning {
