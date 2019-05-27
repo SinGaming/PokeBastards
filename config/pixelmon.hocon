@@ -298,7 +298,7 @@ Spawning {
         Taillow,
         Remoraid,
         Starly,
-		Rayquaza
+		Rayquaza1,
     ]
     # Forces wild Pokémon to despawn after a battle.
     despawnOnFleeOrLoss=false
@@ -390,6 +390,13 @@ Starters {
     level=5
     # Shiny starters.
     shiny=false
+	# List of starters, up to a maximum of 21. For Alolans, add "1" at the end of the name. (example: "Vulpix1")
+    starterList=[
+        Type:Null,
+          
+
+
+    ]
     # pixelmon.config.useCustomStarters.comment
     useCustomStarters=false
 }
