@@ -236,7 +236,7 @@ PokeLoot {
     # Allows normal visible PokeChests to spawn around the world randomly.
     spawnNormal=true
     # Chest spawn rate. 0: 1 per 64 chunks. 1: 1 per 32 chunks. 2: 1 per 18 chunks. 3: 1 per 10 chunks
-    spawnRate=3
+    spawnRate=2
     # Sets frequency (hours) that a player can reuse a timed loot chest (both placed in Creative and naturally spawned) if set to TIMED.
     timedLootReuseHours=24
 }
