@@ -153,19 +153,19 @@ General {
     # Whether to display a GUI with Pokémon drops after defeating a regular Pokémon.
     useDropGUI=true
     # Load external configuration files used for drops from the "pixelmon/drops" folder. If set to true and the "pixelmon/drops" folder does not exist, Pixelmon will create the folder and dump the existing files there.
-    useExternalJSONFilesDrops=false
+    useExternalJSONFilesDrops=true
     # Load external configuration files used for moves from the "pixelmon/moves" folder. If set to true and the "pixelmon/moves" folder does not exist, Pixelmon will create the folder and dump the existing files there.
-    useExternalJSONFilesMoves=false
+    useExternalJSONFilesMoves=true
     # Load external configuration files used for NPCs from the "pixelmon/npcs" folder. If set to true and the "pixelmon/npcs" folder does not exist, Pixelmon will create the folder and dump the existing files there.
-    useExternalJSONFilesNPCs=false
+    useExternalJSONFilesNPCs=true
     # Load external configuration files used for battle rules from the "pixelmon/rules" folder. If set to true and the "pixelmon/rules" folder does not exist, Pixelmon will create the folder and dump the existing files there.
-    useExternalJSONFilesRules=false
+    useExternalJSONFilesRules=true
     # Load external configuration files used for spawning from the "pixelmon/spawning" folder. If set to true and the "pixelmon/spawning" folder does not exist, Pixelmon will create the folder and dump the existing files there.
-    useExternalJSONFilesSpawning=false
+    useExternalJSONFilesSpawning=true
     # Load external configuration files used for stats from the "pixelmon/stats" folder. If set to true and the "pixelmon/stats" folder does not exist, Pixelmon will create the folder and dump the existing files there.
-    useExternalJSONFilesStats=false
+    useExternalJSONFilesStats=true
     # Load external configuration files used for structures from the "pixelmon/structures" folder. If set to true and the "pixelmon/structures" folder does not exist, Pixelmon will create the folder and dump the existing files there.
-    useExternalJSONFilesStructures=false
+    useExternalJSONFilesStructures=true
     # Lets your world follow real world time or not (uses the server's system clock).
     useSystemTimeForWorldTime=false
     # Saves Pixelmon entities to file when world saves (greatly increases save file size and save time if true). Required for the morph mod.
