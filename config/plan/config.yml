@@ -4,7 +4,7 @@
 # https://github.com/Rsl1122/Plan-PlayerAnalytics/wiki/Bukkit-Configuration
 # -----------------------------------------------------
 Server:
-    ServerName: Plan
+    ServerName: Pixelmon
 # -----------------------------------------------------
 Plugin:
     Logging:
@@ -25,13 +25,13 @@ Plugin:
 # Supported databases: SQLite, H2, MySQL
 # -----------------------------------------------------
 Database:
-    Type: H2
+    Type: MySQL
     MySQL:
         Host: localhost
         Port: 3306
-        User: root
-        Password: minecraft
-        Database: Plan
+        User: minecraft
+        Password: ''
+        Database: analytics
         # Launch options to append after mysql driver address
         Launch_options: ?rewriteBatchedStatements=true&useSSL=false
 # -----------------------------------------------------
@@ -42,10 +42,10 @@ Webserver:
     Port: 8804
     Alternative_IP: false
         # %port% is replaced automatically with Webserver.Port
-        Address: your.domain.here:%port%
+        Address: data.sin.gg:%port%
     # InternalIP usually does not need to be changed, only change it if you know what you're doing!
     # 0.0.0.0 allocates Internal (local) IP automatically for the WebServer.
-    Internal_IP: 0.0.0.0
+    Internal_IP: 198.27.81.131
     Security:
         SSL_certificate:
             KeyStore_path: Cert.jks
@@ -57,7 +57,7 @@ Webserver:
     # ATTENTION: On BungeeCord systems it is not possible to disable the WebServer on the plugin due to connection requirements.
     # If the WebServer is disabled with this setting BungeeCord systems will cease to function.
     Disable_Webserver: false
-    External_Webserver_address: https://www.example.address
+    External_Webserver_address: https://data.sin.gg
 # -----------------------------------------------------
 Data_gathering:
     Geolocations: true
@@ -80,7 +80,7 @@ Time:
             Unit: SECONDS
     Thresholds:
         # How long player needs to be idle until Plan considers them AFK
-        AFK_threshold: 3
+        AFK_threshold: 5
             Unit: MINUTES
         # Activity Index considers last 3 weeks and uses these thresholds in the calculation
         # The index is a number from 0 to 5.
